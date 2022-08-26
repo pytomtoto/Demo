@@ -3,6 +3,7 @@
 
 ```
 CorePanel CorePanel
+normal-user normal-user
 ```
 
 

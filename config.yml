@@ -39,9 +39,9 @@ store:
   prefix: uploads
 
 # 网站标题
-title: CorePanle
+title: CorePanel
 # 网站LOGO文字，将显示在登录页面以及侧边栏上方，可以为自定义HTML
-logo: CorePanle
+logo: CorePanel
 # 网站LOGO缩小文字，将显示缩小的侧边栏上方，可以为自定义HTML
 mini_logo: <b>C</b>P
 # 首页路由
@@ -134,9 +134,9 @@ file_upload_engine:
 # - ""
 
 # 引导文件的本地路径
-bootstrap_file_path: /Users/dnsb01341/Documents/src/sspanel-go/bootstrap.go
+bootstrap_file_path: /tmp/bootstrap.go
 # go.mod文件的本地路径
-go_mod_file_path: /Users/dnsb01341/Documents/src/sspanel-go/go.mod
+go_mod_file_path: /tmp/go.mod
 
 # 是否允许删除操作日志
 allow_del_operation_log: false
