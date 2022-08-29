@@ -7,20 +7,11 @@
 # 在数据表模型中也可以通过指定对应的连接名来获取对应数据。
 database:
   default:
-    driver: mysql
-    host: mysql
-    port: 3306
-    user: root
-    pwd: corepanel
-    name: corepanel    
+    driver: mysql   
     max_idle_con: 5
     max_open_con: 10
-    # params为驱动需要的额外的传参
-    # params:
-    #   character: utf8mb4
-
     # 如果设置了DSN，那么以上配置除了Driver都将失效而以配置的DSN为准
-    # dsn: ""
+    dsn: "root:corepanel@tcp(mysql:3306)/corepanel?charset=utf8mb4&parseTime=True&loc=Local"
 
 # 本应用的唯一ID
 app_id: JQIOH6ZSrffk

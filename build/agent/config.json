@@ -1,0 +1,35 @@
+{
+    "log_level": "info",
+    "listen": [
+        "0.0.0.0:443"
+    ],
+    "id": 1,
+    "key": "64a229c097b742dd820f7f6a6f541ca7",
+    "base_url": "http://corepanel/mod_mu",
+    "duration": 60,
+    "fallback": "reject",
+    "alpn_fallback": {
+        "h2": {
+            "connect": "127.0.0.1:81"
+        },
+        "http/1.1": {
+            "proxy": "127.0.0.1:80"
+        }
+    },
+    "tls": {
+        "servers": {
+            "www.wikigo.com": {
+                "cert_chain": "/opt/server.crt",
+                "priv_key": "/opt/server.key"
+            }
+        },
+        "alpn": [
+            "h2",
+            "http/1.1"
+        ],
+        "max_early_data": 16384,
+        "session_cache_size": 1024,
+        "max_fragment_size": 1460,
+        "prefer_server_cipher": true
+    }
+}
